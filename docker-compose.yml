@@ -1,4 +1,4 @@
-version: 'R7'
+version: 'R8'
 services:
   govee2mqtt:
     container_name: govee2mqtt
