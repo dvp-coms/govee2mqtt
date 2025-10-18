@@ -83,7 +83,7 @@ impl EntityInstance for DeviceLight {
                 
                 if matches!(device_state.online, Some(false)) {
                     client
-                        .publish_obj(&self.light.state_topic, &json!({"state":"unavailable"}))
+                        .publish_obj(&self.light.state_topic, &json!({"state":"OFF"}))
                         .await;
                     
                     return Ok(());
